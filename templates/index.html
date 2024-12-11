@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to First Flask!</h1>
+        <nav>
+            <a href="/">Home</a> | <a href="/about">About</a> | <a href="/contact">Contact</a>
+        </nav>
+        <h2>Masukkan Detail Anda:</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Masukkan feedback Anda"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 First Flask. All rights reserved.
+    </footer>
+</body>
+</html>
